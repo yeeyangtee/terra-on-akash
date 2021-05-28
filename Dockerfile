@@ -11,6 +11,5 @@ RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ""
 ADD ssh/ssh /root/ssh.sh
 RUN chmod 755 /root/ssh.sh
 
-
 ENTRYPOINT ["/root/ssh.sh"]
 
